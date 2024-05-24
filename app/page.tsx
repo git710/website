@@ -1,15 +1,9 @@
 import Link from 'next/link';
-import { Anton } from 'next/font/google';
 import { ArrowUpRightIcon } from 'lucide-react';
 import { compareDesc } from 'date-fns';
 import Social from '@/components/Social';
 import List from '@/components/List';
 import { allBlogs, allWeeklies } from 'contentlayer/generated';
-
-const font = Anton({
-  weight: '400',
-  subsets: ['latin'],
-});
 
 export default async function Page() {
   const weeklyList = allWeeklies
@@ -23,9 +17,7 @@ export default async function Page() {
   return (
     <>
       <div className="pt-10 pb-6 px-3">
-        <h1
-          className={`flex flex-col text-3xl text-black leading-normal tracking-wider ${font.className}`}
-        >
+        <h1 className={`flex flex-col text-3xl text-black leading-normal tracking-wider`}>
           <span>Hello,</span>
           <span>I&apos;m Paranoid_K</span>
         </h1>
