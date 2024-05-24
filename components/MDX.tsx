@@ -9,6 +9,7 @@ export interface MDXProps {
 const MDX: FC<MDXProps> = ({ code }) => {
   const Component = useMDXComponent(code);
 
+  // eslint-disable-next-line jsx-a11y/alt-text
   return <Component components={{ img: (props: any) => <Image {...props} /> }} />;
 };
 

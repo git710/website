@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import Menu from '../components/Menu';
 import './globals.css';
-import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Paranoid_K',
@@ -19,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className="max-w-3xl mx-auto px-2">
         <Menu />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
       <Script src="https://cdn.splitbee.io/sb.js" />
     </html>
